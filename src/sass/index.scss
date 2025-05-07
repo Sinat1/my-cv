@@ -3,10 +3,14 @@
 //
 
 //UTILS
-
+@import './utils/variables';
+@import './utils/container';
 //
 
 //COMPONENTS
 @import './components/common';
-@import './components/example';
+@import './components/header';
+@import './components/hero';
+@import './components/skills';
+@import './components/project-exp';
 //
