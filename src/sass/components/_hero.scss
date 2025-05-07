@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
 .hero__wrapper {
@@ -71,9 +71,9 @@ border: 3px solid $btn-color;
     font-size: 16px;
     font-weight: 600;
     background-color: $btn-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color $timing-function,
+    color $timing-function,
+    transform $timing-function;
 
     &:hover, &:focus {
         color: #fff;
