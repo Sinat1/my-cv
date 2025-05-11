@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll('a[href^="#"]').forEach((function(e){e.addEventListener("click",(function(t){var n=e.getAttribute("href"),o=document.querySelector(n);o&&(t.preventDefault(),o.scrollIntoView({behavior:"smooth"}),setTimeout((function(){history.pushState(null,"",window.location.pathname)}),500))}))}))}));
+//# sourceMappingURL=index.e90ca541.js.map
