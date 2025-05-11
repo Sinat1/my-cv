@@ -1,83 +1,163 @@
 .hero {
+  padding-top: 50px;
+
+  @include for-tablet-up {
+    padding-top: 80px;
+  }
+
+  @include for-desktop-up {
     padding-top: 100px;
+  }
 }
 
 .hero__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: $box-shadow-color;
+  border-radius: 20px;
+  height: auto;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: translateX(5px);
+  }
+
+  @include for-phone-only {
+    max-width: 450px;
+    padding-bottom: 20;
+  }
+
+  @include for-tablet-up {
+    width: 650px;
+    padding-bottom: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 900px;
-    height: auto;
-    background-color: #fff;
-    box-shadow: $box-shadow-color;
-    border-radius: 20px;
-    transition: transform 0.5s ease;
+  }
 
-    &:hover {
-        transform: translateX(5px);
-      }
+  @include for-desktop-up {
+    width: 900px;
+    padding-bottom: 20;
+  }
 }
 
 .hero__photo {
-position: absolute;
-top: -25;
-left: -100;
-width: 350px;
-height: 350px;
-object-fit: cover;
-border-radius: 50%;
-border: 3px solid $btn-color;
+  max-width: 100%;
+  height: auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+  @include for-tablet-up {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -50;
+    left: -50;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid $btn-color;
+  }
+
+  @include for-desktop-up {
+    width: 350px;
+    height: 350px;
+    top: -14;
+    left: -100;
+  }
 }
 
 .hero__title {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 700;
 
+  @include for-phone-only {
+    text-align: center;
+  }
+
+  @include for-tablet-up {
+    font-size: 28px;
+  }
+
+  @include for-desktop-up {
+    margin-left: 100px;
     font-size: 30px;
-    font-weight: 700;
+  }
 }
 
 .hero__subtitle {
-    margin-bottom: 20px;
-    margin-left: 100px;
+  margin-bottom: 15px;
 
+  @include for-phone-only {
+    text-align: center;
+    font-size: 16px;
+  }
 
+  @include for-tablet-up {
     font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  @include for-desktop-up {
+    margin-left: 100px;
+    font-size: 18px;
+  }
 }
 
 .hero__text {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.25;
+
+  text-align: justify;
+
+  @include for-desktop-up {
     margin-left: 270px;
     margin-right: 20px;
-    text-align: justify;
-
+  }
 }
 
 .hero__btn {
-    margin-bottom: 20px;
-    margin-left: 100px;
-
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 150px;
-    height: 30px;
-    color: $color-black;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: $btn-color;
-    transition: background-color $timing-function,
-    color $timing-function,
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  color: $color-black;
+  font-weight: 600;
+  background-color: $btn-color;
+  transition: background-color $timing-function, color $timing-function,
     transform $timing-function;
 
-    &:hover, &:focus {
-        color: #fff;
-        background-color: $btn-accent-color;
-        transform: scale(1.03);
-    }
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $btn-accent-color;
+    transform: scale(1.03);
+  }
+
+  @include for-phone-up {
+    display: block;
+    margin-left: auto;
+    font-size: 16px;
+    margin-right: auto;
+  }
+
+  @include for-tablet-up {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+
+  @include for-desktop-up {
+    margin-left: 80px;
+    margin-right: 0;
+    font-size: 16px;
+    width: 180px;
+  }
 }

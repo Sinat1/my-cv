@@ -1,66 +1,67 @@
 <header class="header">
   <div class="container">
-    <nav id="nav" class="nav" data-menu>
-      <div class="nav__container">
-        <a class="logo" href="./index.html">
-          <img class="logo__img" src="./images/cv-logo.png" alt="Logo">
-        </a>
-        <!-- <button
-          class="nav__btn nav__menu-btn"
-          aria-expanded="false"
-          aria-controls="nav"
-          data-menu-button
-        >
-          <svg class="nav__menu-icon" aria-label="Mobile menu">
-            <use
-              class="nav__icon--menu"
-              href="./images/sprite.svg#icon-menu"
-            ></use>
-            <use
-              class="nav__icon--close"
-              href="./images/sprite.svg#icon-close"
-            ></use>
-          </svg>
-        </button> -->
+    <nav class="nav">
+      <a class="logo" href="./index.html">
+        <img class="logo__img" src="./images/cv-logo.png" alt="Logo" />
+      </a>
+      <button
+        type="button"
+        class="nav__menu-btn"
+        aria-expanded="false"
+        aria-controls="nav__container"
+        data-menu-button
+      >
+        <svg class="nav__menu-icon" aria-label="Mobile menu">
+          <use
+            class="nav__icon--menu"
+            href="./images/sprite2.svg#icon-menu"
+          ></use>
+          <use
+            class="nav__icon--close"
+            href="./images/sprite2.svg#icon-close-btn"
+          ></use>
+        </svg>
+      </button>
+      <div class="nav__container" id="nav__container" data-menu>
         <ul class="pages">
           <li class="pages__item">
-            <a
-              class="pages__link"
-              href="#skills"
-              >Skills</a
-            >
+            <a class="pages__link" href="#skills" data-menu-link>Skills</a>
           </li>
           <li class="pages__item">
-            <a
-              class="pages__link"
-              href="#project-exp"
+            <a class="pages__link" href="#project-exp" data-menu-link
               >Project experience</a
             >
           </li>
           <li class="pages__item">
-            <a
-              class="pages__link"
-              href="#work-exp"
-              data-menu-link
+            <a class="pages__link" href="#work-exp" data-menu-link
               >Work experience</a
             >
           </li>
           <li class="pages__item">
-            <a
-              class="pages__link"
-              href="#education"
-              data-menu-link
+            <a class="pages__link" href="#education" data-menu-link
               >Education</a
+            >
+          </li>
+        </ul>
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="tel:+380661560361">
+              <svg class="header__contacts-icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              +380 (66) 156-03-61</a
+            >
+          </li>
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="mailto:sinati0508@gmail.com">
+              <svg class="header__contacts-icon">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              sinati0508@gmail.com</a
             >
           </li>
         </ul>
       </div>
     </nav>
   </div>
-
-  <!-- <a class="scroll-up" href="#">
-    <svg class="scroll-up__icon">
-      <use href="./images/sprite.svg#icon-up"></use>
-    </svg>
-  </a> -->
 </header>
