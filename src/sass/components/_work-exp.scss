@@ -35,7 +35,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-align: justify;
 
   @include for-phone-only {
     flex-direction: column;
